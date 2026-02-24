@@ -11,6 +11,12 @@ ul{
 }
 nav {
     background-color: rgba(0, 0, 0, 0.502);
+    position: sticky !important;
+    top: 0px;
+    z-index: 99999 !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+
 }
 
 .slider {
@@ -82,3 +88,151 @@ margin: 0px auto;
 
 }
 /* end services */
+
+/* start counter */
+#counter{
+    position: relative;
+    background-image: url(../Imgs/imgi_12_post-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 110px 0px !important;
+    background-size: cover;
+
+}
+.counter-con .counter-icon {
+    border: solid #cde1f8 7px !important;
+    width: 70px;
+    height: 70px;
+    margin: 0px auto;
+    color: white;
+    /* padding: 0px; */
+}
+#counter .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: #0d6efd;
+    opacity: .6;
+    height: 100%;
+    width: 100%;
+
+}
+/* end counter */
+
+/* start work */
+#Work{}
+.works .work .work-img img{
+    transition: transform .5s;
+}
+.work-img{
+    overflow: hidden;
+
+}
+.work:hover .work-img img{
+    width: 100%;
+    transform: scale(1.3);
+}
+/* end work */
+/* start testimonial */
+#testimonial{
+    background-image: url(../Imgs/imgi_14_overlay-bg.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+#testimonial .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: #0d6efd;
+    opacity: .6;
+    height: 100%;
+    width: 100%;
+}
+/* .test-con{
+    position: relative;
+} */
+/* end testimonial */
+/* start Blog */
+#Blog{}
+.card-footer-info a span{
+    transition: all .4s;
+}
+
+.card-footer-info a span:hover{
+     color:#0d6efd !important;
+     cursor: pointer !important;
+}
+/* end Blog */
+
+/* start contact */
+#Contact{
+    background-image: url(../Imgs/imgi_14_overlay-bg.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+#Contact .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: #0d6efd;
+    opacity: .6;
+    height: 100%;
+    width: 100%;
+}
+.about-right h2 ,.contact-left h2 {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.about-right h2::after ,.contact-left h2::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: blue;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-right p {
+    font-size: 16px !important;
+  }
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s;
+}
+.service-card:hover .icon-container {
+  background-color: #0078ff;
+  border-color: #cde1f8 !important;
+}
+
+.service-card:hover .icon-container i{
+ color: white;
+}
+
+.card-person img{
+  width: 25px;
+  margin-right: 5px;
+}
+textarea{
+  resize: none !important;
+}
+.icons-cont{
+    width: 40px;
+    height: 40px;
+    transition: background-color .3s;
+    border: 4px solid #0078ff;
+    cursor: pointer;
+}
+.icons-cont:hover{
+    background-color: #0078ff;
+    border: 4px solid #cde1f8;
+    color: aliceblue;
+}
+/* end contact */
